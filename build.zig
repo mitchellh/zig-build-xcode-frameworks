@@ -30,7 +30,7 @@ pub fn addPaths(b: *std.Build, step: *std.build.CompileStep) !void {
         b.allocator,
         // WARNING: forked temporarily for https://github.com/hexops/xcode-frameworks/issues/4
         "https://github.com/mitchellh/xcode-frameworks",
-        "955b068f93cac2bca80b98f9ab2c6652b55bc43b",
+        "983deb1ab8d03861db30ea297cc78e6d121da4db",
         xSdkPath("/zig-cache/xcode_frameworks"),
     );
 
