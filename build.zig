@@ -11,7 +11,7 @@ pub fn build(b: *std.Build) !void {
     });
     lib.linkLibC();
     lib.addCSourceFiles(&.{"stub.c"}, &.{});
-    addPaths(b, lib);
+    try addPaths(b, lib);
 
     b.installArtifact(lib);
 }
