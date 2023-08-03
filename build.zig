@@ -28,8 +28,9 @@ pub fn addPaths(b: *std.Build, step: *std.build.CompileStep) !void {
     // branch: mach
     try ensureGitRepoCloned(
         b.allocator,
-        "https://github.com/hexops/xcode-frameworks",
-        "723aa55e9752c8c6c25d3413722b5fe13d72ac4f",
+        // WARNING: forked temporarily for https://github.com/hexops/xcode-frameworks/issues/4
+        "https://github.com/mitchellh/xcode-frameworks",
+        "955b068f93cac2bca80b98f9ab2c6652b55bc43b",
         xSdkPath("/zig-cache/xcode_frameworks"),
     );
 
