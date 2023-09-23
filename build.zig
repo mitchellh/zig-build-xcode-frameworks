@@ -34,7 +34,7 @@ pub fn addPaths(b: *std.Build, step: *std.build.CompileStep) !void {
         xSdkPath("/zig-cache/xcode_frameworks"),
     );
 
-    step.addFrameworkPath(.{ .path = xSdkPath("/zig-cache/xcode_frameworks/Frameworks") });
+    step.addSystemFrameworkPath(.{ .path = xSdkPath("/zig-cache/xcode_frameworks/Frameworks") });
     step.addSystemIncludePath(.{ .path = xSdkPath("/zig-cache/xcode_frameworks/include") });
     step.addLibraryPath(.{ .path = xSdkPath("/zig-cache/xcode_frameworks/lib") });
 }
